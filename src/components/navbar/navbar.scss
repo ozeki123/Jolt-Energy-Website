@@ -1,0 +1,30 @@
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 43px auto;
+    width: 85%;
+
+    li{
+        list-style-type: none;
+    }
+
+    .list-left{
+        font-size: 25px;
+        font-family: 'Avenir-Demi';
+        letter-spacing: -0.5px;
+    }
+
+    .list-right{
+        display: flex;
+        position: relative;
+        right: 50px;
+        font-family: 'Avenir';
+        font-size: 17px;
+        letter-spacing: 0.2px;
+
+        li{
+            margin-left: 55px;
+        }
+    }
+}

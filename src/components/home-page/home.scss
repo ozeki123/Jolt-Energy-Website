@@ -1,0 +1,17 @@
+.home-container{
+    display: flex;
+    flex-direction: column;
+    margin: 13rem auto;
+    width: 83%;
+
+    h1{
+        font-family: 'Avenir-Demi';
+        font-size: 3rem;
+    }
+    
+    p{
+        font-family: 'Avenir';
+        font-size: 1.1rem;
+        margin: -10px 0;
+    }
+}
