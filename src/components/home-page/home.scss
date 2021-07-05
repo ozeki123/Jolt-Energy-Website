@@ -1,17 +1,170 @@
-.home-container{
+.wrapper{
+}
+
+.bg-container{
+    height: 100vh;
+    background: url('/assets/images/hills.jpg') no-repeat center center  fixed;
+    background-size: cover;
+    overflow: hidden;
+    filter: brightness(95%);
+}
+
+.nav-container{
+    position: fixed;
+    width: 100%;
+}
+
+.main-container{
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    margin: 13rem auto;
-    width: 83%;
+
+    .nav-container{
+        // position: fixed;
+    }
+
+    .home-container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+}
+
+.home-container{
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    height: 100vh;
+    // padding: 5rem;
+    
+
+    .text-container{
+        width: 100%;
+        font-family: 'ks-regular';
+        height: 85%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        // padding: 10rem;
+
+        .flex-grid-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-self: center;
+            width: 83vw;
+            height: 70vh;
+            .flex-large{
+                height: 50vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .flex-grid-group-one{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                .lines{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    .vertical-line{
+                        height: 100%;
+                        display: flex;
+                        width: 1px;
+                        background-color: white;
+          
+                    }
+    
+                    .vertical-line-second{
+                        display: flex;
+                        width: 1px;
+                        background-color: white;
+                    }
+                }
+
+               
+                
+            }
+    
+
+            .flex-grid-group-two{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                
+                
+
+                
+                
+                
+                .flex-small{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    // height: 5vh;
+                    // border-left: 10px solid rgba(255, 255, 255, 0.9);
+                    height: 20%;
+                    position: relative;
+                    h1{
+                        font-size: 15px;
+                        font-family: 'ks-light';
+                        padding: 1rem;
+                        position: relative;
+                        bottom: 2.3rem;
+                        
+                    }
+
+                    p{
+                        font-size: 12px;
+                        font-family: 'ks-thin';
+                        position: relative;
+                        bottom: 5.5rem;
+                        line-height: 25px;
+                        padding: 1rem;
+                    }
+                }
+                
+            }
+        }
+
+        
+    }
+    
 
     h1{
-        font-family: 'Avenir-Demi';
-        font-size: 3rem;
+        font-size: 2.9rem;
+        line-height: 4rem;
+        letter-spacing: 1px;
+        
+
     }
     
     p{
-        font-family: 'Avenir';
-        font-size: 1.1rem;
-        margin: -10px 0;
+        font-size: 1.2rem;
+        margin: -9px 0px;
+        letter-spacing: 5px;
+        font-family: 'ks-light'
+        
     }
+}
+
+hr{
+    height: 1px;
+    display: block;
+    border: 0;
+    border-top: 1px solid white;
+    opacity: 0.5;
+
+}
+
+.footer-section{
+    margin-top: auto;
+}
+
+.about-container{
+    min-height: 100vh;
 }

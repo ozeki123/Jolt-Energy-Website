@@ -2,26 +2,29 @@
 .container{
     display: flex;
     justify-content: space-between;
-    margin: 43px auto;
+    margin: 35px auto;
     width: 85%;
+    color: white;
 
     li{
         list-style-type: none;
     }
 
     .list-left{
-        font-size: 25px;
-        font-family: 'Avenir-Demi';
+        font-size: 23px;
+        font-family: 'ks-bold';
         letter-spacing: -0.5px;
+        letter-spacing: 1px;
     }
 
     .list-right{
         display: flex;
         position: relative;
         right: 50px;
-        font-family: 'Avenir';
-        font-size: 17px;
-        letter-spacing: 0.2px;
+        font-family: 'ks-thin';
+        font-size: 15px;
+        letter-spacing: 1.2px;
+        margin: 6px 0px;
 
         li{
             margin-left: 55px;

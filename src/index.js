@@ -12,7 +12,6 @@ import Services from './components/services-page/services';
 const Routing = () => {
   return(
     <Router>
-      <Navbar/>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
