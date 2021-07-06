@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.scss'
 import AccordionSection from '../accordion-page/accordion'
+import jolt from '../assets/jolt-mobile.png'
 
 
 
@@ -15,7 +16,7 @@ const About = () => {
                         <AccordionSection/>
                     </div>
                     <div className="about-column-two">
-                        <h1>Hello World.</h1>
+                        <img src={jolt}/>
                     </div>
                 </div>
                 

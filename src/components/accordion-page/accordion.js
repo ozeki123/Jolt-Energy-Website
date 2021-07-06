@@ -16,8 +16,10 @@ const useStyles = makeStyles((theme) => ({
           },
         "& .MuiPaper-root": {
             boxShadow: 'none'
-        }
+        },
     },
+    
+
     accordion: {
         border: 'none',
         boxShadow: 'none',
@@ -37,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         lineHeight: 1.7
         
     }
-  }));
+  })) ;
 
 
 const AccordionSection = () => {
@@ -47,19 +49,21 @@ const AccordionSection = () => {
         const handleChange = (panel) => (event, isExpanded) => {
             setExpanded(isExpanded ? panel : false);
         };
+
     return (
         <div className={classes.root}>
         <h1>How it works</h1>
-            <Accordion className={classes.accordion} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion className={classes.accordion}  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1bh-content"
                 id="panel1bh-header"
+                
                 >
-                    <Typography className={classes.secondaryHeading}>We're committed to making visions reality</Typography>
+                    <Typography expanded={true} className={classes.secondaryHeading}>We're committed to making visions reality</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className={classes.textSection}>
+                    <Typography className={classes.textSection} >
                     Select a plan that fits your requirements. After purchasing, an expert will contact you shortly for consultation. In this step we will have the you and our expert discuss the desired scope of installation. and its plausibility. 
 
 The expert will identify whether or not the selected equipment you purchased can be installed in your home or not, and if any additional costs arise from installation. 
@@ -93,7 +97,8 @@ The expert will identify whether or not the selected equipment you purchased can
                 id="panel3bh-header"
                 >
                     <Typography className={classes.secondaryHeading}>
-                        We provide the resources you need
+                        Affordable prices
+                        
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -111,6 +116,8 @@ The expert will identify whether or not the selected equipment you purchased can
                 >
                     <Typography className={classes.secondaryHeading}>
                         Consultation prior to purchase
+                        
+                        
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
@@ -120,6 +127,23 @@ The expert will identify whether or not the selected equipment you purchased can
                 </Typography>
                 </AccordionDetails>
             </Accordion>
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+            <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel5bh-content"
+            id="panel5bh-header"
+            >
+                <Typography className={classes.secondaryHeading}>
+                    We provide the resources you need
+                </Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+            <Typography>
+                Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit amet egestas eros,
+                vitae egestas augue. Duis vel est augue.
+            </Typography>
+            </AccordionDetails>
+        </Accordion>
     </div>
     )
 }

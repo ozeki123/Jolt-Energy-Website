@@ -1,5 +1,6 @@
 .about-wrapper{
     width: 45%;
+    
 }
 
 .about-container{
@@ -22,6 +23,11 @@
             flex: 50%;
             display: flex;
             justify-content: center;
+
+            img{
+                
+                width: 16rem;
+            }
         }
     }
 
